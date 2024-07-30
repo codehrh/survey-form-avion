@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="main">
+  <div class="flexContainer">
+    <div id="title-block" class="flexItem">
+      <h1 id="title">
+        PIZZA PREFERENCE FORM
+      </h1>
+      <p id="description">
+        This form was made to gain insight on the overall preference for pizza flavors. Additionally, the data will help
+        us understand if a specific topping (or combination of toppings) is preferred on pizza (meat, veggies, etc.)
+      </p>
+      <p>Thank you for participating!</p>
+    </div>
+    <div id="form-block" class="flexItem">
+      <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required><br>
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="juandelacruz@gmail.com" required><br>
+        <label id="number-label" for="age">Age:</label>
+        <input type="number" name="age" id="age" min="18" max="100" placeholder="Optional"><br>
+        <label for="toppingStyle">Topping Amount:</label>
+        <select id="dropdown" name="toppingAmount"><br>
+          <option value="select" selected disabled>Select number of Toppings</option>
+          <option value="one">One Topping</option>
+          <option value="two">Two Toppings</option>
+          <option value="three+">Three or More Toppings</option>
+        </select><br>
+
+        <label for="topping">Favorite Topping:</label><br>
+        <input type="radio" name="topping" value="Meat">Meat
+        <input type="radio" name="topping" value="Seafood">Spread
+        <input type="radio" name="topping" value="Greens">Greens<br>
+
+        <label for="pizzaType">What pizza flavors have you tried?</label><br>
+        <input type="checkbox" id="meatlovers" name="meatlovers" value="meatlovers">Meat Lover's
+        <input type="checkbox" id="vegetarian" name="vegetarian" value="vegetarian">Vegetarian
+        <input type="checkbox" id="overloaded" name="overloaded" value="overloaded">Overloaded(Meat & Veggies)
+        <input type="checkbox" id="seafood" name="seafood" value="seafood">Seafood<br>
+
+        <label for="additionalComments">Anything else you'd like to share about your love for pizza?</label><br>
+        <textarea name="comments" rows="6" cols="30"></textarea><br>
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!-- Question/clarification for number 10, and next user story that needs to be cleared is 12. -->

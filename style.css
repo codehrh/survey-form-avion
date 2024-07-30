@@ -1,0 +1,63 @@
+html, body {
+  background-image: url(pizzabg.jpg);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexItem {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  padding: 20px;
+}
+
+#title-block {
+  background-image: url(pizza.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffd60a;
+  border: 1px solid #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+#form-block {
+  background-image: url(cutepizzabackground.jpg);
+  background-size: cover;
+  background-attachment:fixed;
+  border: 1px solid;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+  resize: none;
+}
+
+input[type=submit]{
+  background-color: #fbb532;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 768px) {
+  .flexContainer{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .flexContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+}
